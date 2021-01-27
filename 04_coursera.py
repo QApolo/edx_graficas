@@ -7,8 +7,8 @@ import shutil
 test_graf = "test"
 mapa = "map"
 diccionario = "dic"
-#slash = "\\" 
-slash = "/"
+slash = "\\" 
+#slash = "/"
 l2 = ['c', 'x']
 l1 = ['d','o']
 serie = ["1", "3", "5", "7", "9", "11", "13", "15", "17"]
@@ -77,6 +77,6 @@ string = os.path.abspath("")
 res = string.split(slash)[0:-1]
 res = slash.join(res)
 try:
-    shutil.copy(res+slash+output+"." + l3, first + slash + "04_coursera")
+    shutil.copy("./04_coursera.png", first + slash + "04_coursera")
 except:
     print("Missing modules...\nTry installing them first and execute again")
