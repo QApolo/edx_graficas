@@ -6,8 +6,8 @@ import numpy as np
 test_graf = "test"
 mapa = "map"
 diccionario = "dic"
-#slash = "\\" 
-slash = "/"
+slash = "\\" 
+#slash = "/"
 l2 = ['c', 'x']
 l1 = ['d','o']
 
