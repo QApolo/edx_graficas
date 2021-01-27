@@ -70,8 +70,11 @@ def recursivo(nombre, root):
         global start
         
         if nombre.split('.')[-1] in tipos:
-            shutil.copy(nombre, root+slash+str(start)+"_grafica")
-            start = start + 1
+            try:
+                shutil.copy(nombre, root+slash+str(start)+"_grafica")
+                start = start + 1
+            except:
+                print("error")
         return
         
     child = os.listdir(nombre)
